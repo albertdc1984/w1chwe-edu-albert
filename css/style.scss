@@ -196,7 +196,7 @@ body {
           border-color: black;
           .follow {
             &_title {
-              font-size: small;
+              font-size: large;
             }
             &_icon {
               color: #ff5959;
@@ -215,7 +215,7 @@ body {
           border-bottom-style: solid;
           border-color: black;
           h2 {
-            font-size: small;
+            font-size: large;
           }
           &_form {
             display: flex;
@@ -226,7 +226,7 @@ body {
               align-items: center;
             }
             &_policy {
-              font-size: 8px;
+              font-size: 12px;
             }
             &_button {
               background-color: #ff5959;
@@ -249,9 +249,10 @@ body {
             flex-direction: column;
             align-items: center;
             flex-direction: center;
-            font-size: x-small;
+            font-size: large;
             i {
               color: #ff5959;
+              font-size: large;
             }
           }
         }
@@ -260,7 +261,7 @@ body {
       &_footer {
         background-color: #ff5959;
         color: white;
-        font-size: x-small;
+        font-size: small;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -273,5 +274,10 @@ body {
         color: black;
       }
     }
+  }
+}
+@media (min-width: 600px) {
+  .onee-box {
+    visibility: hidden;
   }
 }
