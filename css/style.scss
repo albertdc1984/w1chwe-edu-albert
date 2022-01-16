@@ -100,6 +100,7 @@ body {
           }
         }
         & .container-targets-main {
+          visibility: hidden;
           display: flex;
           flex-direction: column;
           align-items: stretch;
@@ -196,7 +197,7 @@ body {
           border-color: black;
           .follow {
             &_title {
-              font-size: small;
+              font-size: large;
             }
             &_icon {
               color: #ff5959;
@@ -215,7 +216,7 @@ body {
           border-bottom-style: solid;
           border-color: black;
           h2 {
-            font-size: small;
+            font-size: large;
           }
           &_form {
             display: flex;
@@ -226,7 +227,7 @@ body {
               align-items: center;
             }
             &_policy {
-              font-size: 8px;
+              font-size: 12px;
             }
             &_button {
               background-color: #ff5959;
@@ -249,9 +250,10 @@ body {
             flex-direction: column;
             align-items: center;
             flex-direction: center;
-            font-size: x-small;
+            font-size: large;
             i {
               color: #ff5959;
+              font-size: large;
             }
           }
         }
@@ -260,7 +262,7 @@ body {
       &_footer {
         background-color: #ff5959;
         color: white;
-        font-size: x-small;
+        font-size: small;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -272,6 +274,43 @@ body {
         text-decoration: none;
         color: black;
       }
+    }
+  }
+}
+.hovermenu {
+  display: none;
+}
+@media (min-width: 600px) {
+  .onee-box {
+    visibility: hidden;
+  }
+
+  .hovermenu {
+    display: flex;
+    z-index: 100;
+    height: 95px;
+
+    &_red {
+      display: flex;
+      align-items: flex-end;
+      background-color: #ff5959;
+      height: 180px;
+    }
+    &_blue {
+      display: flex;
+      align-items: flex-end;
+      background-color: #6ea1b6;
+    }
+    &_blue:hover {
+      height: 180px;
+    }
+    &_yellow {
+      display: flex;
+      align-items: flex-end;
+      background-color: #f6b334;
+    }
+    &_yellow:hover {
+      height: 180px;
     }
   }
 }
