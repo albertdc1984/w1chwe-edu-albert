@@ -1,0 +1,8 @@
+.vim/plugged
+.DS_Store
+.netrwhist
+.vs
+.vscode
+node_modules
+css/style.css
+css/style.css.map
